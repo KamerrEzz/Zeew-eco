@@ -1,29 +1,34 @@
-# Zeew-Eco
-
-
-![Zeew Api](https://i.imgur.com/MP2bABn.png "Título alternativo")
+![Zeew Api](https://i.imgur.com/MP2bABn.png "Lo Mejor de Zeew y del C&P")
 
 # Zeew Eco!
 
-  - Economia Facil y cencilla
-  - Tienda Facil sin limite
+  - Economía Fácil y sencilla
+  - Tienda Fácil sin limite
 
 
-Crea Una economia facil y cencilla de usar para tu bot.
+Crea Una economía fácil y sencilla de usar para tu bot.
 
-> Muchos se complican demaciado para hacer una economia facil
-> ¿Por que no ayudarles un poco?
+> Muchos se complican demasiado para hacer una economía fácil
+> ¿Por qué no ayudarles un poco?
 
-## Contructores
+## Informacion
 
-A qui te presento los contructores para iniciar esta economia.
+* **Constructores**
+  * [Economía](#economía)
+  * [Tienda](#Tienda)
+  * [Trabajos](#Trabajos)
+* **Estructura json**
+  * [Economía](#json-eco)
+  * [Tienda](#json-td)
+* **Zeew**
+  * [Staff](#Staff)
+  * [Proyectos](#Proyectos)
 
-* [Economia](#economia)
-* [Tienda](#Tienda)
-* [Trabajos](#Trabajos)
+ 
+No olvides que si tienes un error o propuestas para mejorar este NPM
+Solo tienes que unirte a este servidor de [discord]( https://discord.gg/HWwBD6F).
 
-No Olvides que si tienes algun error o propuesta para mejorar este NPM, solo tienes que unirte a nuestro servidor de [discord]( https://discord.gg/HWwBD6F).
-
+Gracias por Escoger este NPM
 ## instalación
 
 ```js
@@ -37,12 +42,24 @@ const zeco = require('zeew-eco')
 const eco = new zeco.economia()
 ```
 
-| Metodos | Descripcion |
+| Métodos | Descripción |
 | ------ | ------ |
+| [mostrar](#Eco-mostrar) | Muestra el dinero del usuario
 | [agregar](#Eco-Agregar) | Agrega dinero aun usuario|
 | [quitar](#Eco-quitar) | Elimina el dinero de un usuario|
 | [comprar](#Eco-comprar) | Comprar En la tienda|
 
+#### Eco-mostrar
+```js
+eco.mostrar(clave)
+```
+* clave - ID del servidor
+```js
+const eco = new zeco.economia()
+eco.mostrar(message.guild.id)
+```
+```js
+```
 #### Eco-Agregar
 ```js
 eco.agregar(clave, id, cantidad)
@@ -95,9 +112,21 @@ const td = new zeco.tienda()
 | Metodos | Descripcion |
 | ------ | ------ |
 | [agregar](#TD-agregar) | Agrega Items a la tienda|
+| [agregar](#TD-agregar) | Agrega Items a la tienda|
 | [quitar](#TD-quitar) | Quita Items de la tienda|
-* [JSON](#Json)
 
+
+#### TD-mostrar
+```js
+eco.mostrar(clave)
+```
+* clave - ID del servidor
+```js
+const eco = new zeco.economia()
+eco.mostrar(message.guild.id)
+```
+```js
+```
 #### TD-agregar
 ```js
 eco.agregar(clave, nombre, desc, precio)
@@ -108,7 +137,7 @@ eco.agregar(clave, nombre, desc, precio)
 * precio - el precio del item
 ```js
 const td = new zeco.tienda()
-eco.agregar(message.guild.id, "Canal Propio", "Con esto podras optener un canal privado para ti", 20000)
+eco.agregar(message.guild.id, "Canal Propio", "Con esto podrás obtener un canal privado para ti", 20000)
 ```
 ```js
 ```
@@ -122,7 +151,7 @@ eco.eliminar(clave, id)
 const eco = new zeco.tienda()
 eco.quitar(message.guild.id, 1)
 ```
-el numero del item aumento dependiendo cuantos tengas
+el numero del ítem aumento dependiendo cuantos tengas
 ```json
 {
   "nombre": {
@@ -133,7 +162,8 @@ el numero del item aumento dependiendo cuantos tengas
 ```
 ```js
 ```
-#### JSON
+### JSON
+#### json-eco
 ```json
 {
  "ID-servidor": {
@@ -149,10 +179,24 @@ el numero del item aumento dependiendo cuantos tengas
  }
 }
 ```
+```
+```
+#### json-td
+```json
+{
+ "ID-servidor": {
+  "ID-usuario": {
+   "dinero": 3100
+  }
+ }
+}
+```
+```
+```
 ---
-## Creador NPM:
-  ### @KamerrOficial
-  
+## Zeew
+#### Staff
+ * @KamerrOficial
   ```
     * ROL: Owner
     * ID Discord: 403695999941345280
@@ -160,15 +204,17 @@ el numero del item aumento dependiendo cuantos tengas
     * Redes Sociales: @KamerrOficial
     * Portafolio: behance.net/kamerroficial
   ```
-## Zeew Staff
- ### @ValerynR  
- 
+ * @ValerynR  
 ```
   * ROL: Co-Owner
   * ID Discord: 393603334847856650
 ```
+#### Proyectos
 
+| proyecto | descripcion |
+| --- | --- |
+| Zeew | Descubre nuestra API Reset de Imágenes y manipulación
 #### Donaciones
-
-
 * [Kamerr Ko-fi](https://ko-fi.com/kamerroficial)
+Las Donaciones las uso crear más proyectos y mejorar la calidad,
+cierta cantidad está totalmente para **zeew** para su único uso.
