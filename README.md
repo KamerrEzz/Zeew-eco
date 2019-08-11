@@ -111,7 +111,7 @@ const td = new zeco.tienda()
 
 | Metodos | Descripcion |
 | ------ | ------ |
-| [agregar](#TD-agregar) | Agrega Items a la tienda|
+| [mostrar](#TD-mostrar) | Agrega Items a la tienda|
 | [agregar](#TD-agregar) | Agrega Items a la tienda|
 | [quitar](#TD-quitar) | Quita Items de la tienda|
 
