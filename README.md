@@ -14,7 +14,7 @@ Crea Una economía fácil y sencilla de usar para tu bot.
 ## Informacion
 
 * **Constructores**
-  * [Economía](#economía)
+  * [Economía](#economia)
   * [Tienda](#Tienda)
   * [Trabajos](#Trabajos)
 * **Estructura json**
