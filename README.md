@@ -213,7 +213,7 @@ el numero del ítem aumento dependiendo cuantos tengas
 
 | proyecto | descripcion |
 | --- | --- |
-| Zeew | Descubre nuestra API Reset de Imágenes y manipulación
+| [Zeew](https://www.npmjs.com/package/zeew) | Descubre nuestra API Reset de Imágenes y manipulación
 #### Donaciones
 * [Kamerr Ko-fi](https://ko-fi.com/kamerroficial)
 Las Donaciones las uso crear más proyectos y mejorar la calidad,
