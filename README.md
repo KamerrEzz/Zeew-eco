@@ -91,14 +91,14 @@ eco.quitar(message.guild.id, miembro.id, 1500)
 #### Eco-comprar
 
 ```js
-ecocomprar(clave, id, item)
+eco.comprar(clave, id, item)
 ```
 * clave - ID del servidor
 * id - ID del usuario
-* item - numero de item
+* item - numero de item / ID
 ```js
 const eco = new zeco.economia()
-eco.comrar(message.guild.id, miembro.id, 1)
+eco.comprar(message.guild.id, miembro.id, 1)
 ```
 ```js
 ```
