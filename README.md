@@ -52,12 +52,13 @@ const eco = new zeco.economia()
 
 <a name="Eco-mostrar" />
 
-#### Economia: Comprar
+#### Economia: Mostrar
 
 ```js
-eco.mostrar(clave)
+eco.mostrar(clave, id)
 ```
 * clave - ID del servidor
+* id - ID del usuario
 ```js
 const eco = new zeco.economia()
 eco.mostrar(message.guild.id)
