@@ -34,10 +34,15 @@ const eco = new zeco.economia()
 eco.mostrar(message.guild.id)
 ```
 **Esta Te Devuelve:**
+
 • **Si el usuario no tiene dinero**
+
 `"No tienes dinero"`
+
 • **Si el Usuario tiene dinero**
+
 Si el usuario tiene 1500, esta regresa los `1500`
+
 ```js
 let dinero = new zeco.mostrar(message.guild.id, usuario.id)
 message.channel.send("tu Dinero es " + dinero)
@@ -58,10 +63,15 @@ const eco = new zeco.economia()
 eco.agregar(message.guild.id, miembro.id, 1500)
 ```
 **Esta Te Devuelve:**
+
 • **Mensaje de agregar**
+
 Esta regresa el dinero actual del usuario
+
 ejemplo 1: el usuario no tiene dinero y le agregar 500, esta regresa `500`
+
 ejemplo 2: si el usuario tiene 500 y le agregas 500 , esta regresa `1000`
+
 
 ```js
 let dinero = 1500
@@ -89,10 +99,15 @@ eco.quitar(message.guild.id, miembro.id, 1500)
 ```
 
 **Esta Te Devuelve:**
+
 • **Si el Usuario no existe en la db:** 
+
 `"No tienes dinero"`
+
 • **Si el usuario tiene cero de dinero:** 
+
 `"Tu dinero es 0, no puedes quitarle mas."`
+
 • **Mensaje de quitar**
  El dinero actual del usuario, si el usuario tiene 1500 de dinero
  y le quitas 500, esta regresara el dinero actual del usuario `1000`
