@@ -78,7 +78,7 @@ eco.agregar(clave, id, cantidad)
 
 ```js
 const eco = new zeco.economia()
-eco.agregar(servidord.id, miembro.id, 1500)
+eco.agregar(servidor.id, miembro.id, 1500)
 ```
 ```js
 ```
@@ -94,7 +94,7 @@ eco.quitar(clave, id, cantidad)
 * cantidad - Dinero que quieras agregarle
 ```js
 const eco = new zeco.economia()
-eco.quitar(servidord.id, miembro.id, 1500)
+eco.quitar(servidor.id, miembro.id, 1500)
 ```
 
 ```js
@@ -112,7 +112,7 @@ eco.comprar(clave, id, item)
 * item - numero de item / ID
 ```js
 const eco = new zeco.economia()
-eco.comprar(servidord.id, miembro.id, 1)
+eco.comprar(servidor.id, miembro.id, 1)
 ```
 ```js
 ```
@@ -141,7 +141,7 @@ eco.mostrar(clave)
 * clave - ID del servidor
 ```js
 const td = new zeco.tienda()
-eco.mostrar(servidord.id)
+eco.mostrar(servidor.id)
 ```
 ```js
 ```
@@ -158,7 +158,7 @@ eco.agregar(clave, nombre, desc, precio)
 * precio - el precio del item
 ```js
 const td = new zeco.tienda()
-td.agregar(servidord.id, "Canal Propio", "Con esto podrás obtener un canal privado para ti", 20000)
+td.agregar(servidor.id, "Canal Propio", "Con esto podrás obtener un canal privado para ti", 20000)
 ```
 ```js
 ```
@@ -173,7 +173,7 @@ td.eliminar(clave, id)
 * id - Numero del Item de la tienda
 ```js
 const td = new zeco.tienda()
-td.eliminar(servidord.id, 1)
+td.eliminar(servidor.id, 1)
 ```
 ```js
 ```
