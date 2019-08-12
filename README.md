@@ -8,21 +8,21 @@
 
 Crea Una economía fácil y sencilla de usar para tu bot.
 
-> Muchos se complican demasiado para hacer una economía fácil
-> ¿Por qué no ayudarles un poco?
+> Muchos se complican demasiado hacer algo como esto,
+> ¿Por qué no ayudarles un poco?.
 
 ## Informacion
 
 * **Constructores**
   * [Economía](#economia)
-  * [Tienda](#Tienda)
-  * [Trabajos](#Trabajos)
+  * [Tienda](#tienda)
+  * [Trabajos](#trabajos)
 * **Estructura json**
   * [Economía](#json-eco)
   * [Tienda](#json-td)
 * **Zeew**
-  * [Staff](#Staff)
-  * [Proyectos](#Proyectos)
+  * [Staff](#staff)
+  * [Proyectos](#proyectos)
 
  
 No olvides que si tienes un error o propuestas para mejorar este NPM
@@ -34,6 +34,7 @@ Gracias por Escoger este NPM
 ```js
 npm i zeew-eco
 ```
+<a name="economia" />
 
 ### Economia
 
@@ -45,11 +46,14 @@ const eco = new zeco.economia()
 | Métodos | Descripción |
 | ------ | ------ |
 | [mostrar](#Eco-mostrar) | Muestra el dinero del usuario
-| [agregar](#Eco-Agregar) | Agrega dinero aun usuario|
+| [agregar](#Eco-agregar) | Agrega dinero aun usuario|
 | [quitar](#Eco-quitar) | Elimina el dinero de un usuario|
 | [comprar](#Eco-comprar) | Comprar En la tienda|
 
-#### Eco-mostrar
+<a name="Eco-mostrar" />
+
+#### Economia: Comprar
+
 ```js
 eco.mostrar(clave)
 ```
@@ -60,7 +64,10 @@ eco.mostrar(message.guild.id)
 ```
 ```js
 ```
-#### Eco-Agregar
+<a name="Eco-agregar" />
+
+#### Economia: Agregar
+
 ```js
 eco.agregar(clave, id, cantidad)
 ```
@@ -74,7 +81,10 @@ eco.agregar(message.guild.id, miembro.id, 1500)
 ```
 ```js
 ```
-#### Eco-quitar
+<a name="Eco-quitar" />
+
+#### Economia: Quitar
+
 ```js
 eco.quitar(clave, id, cantidad)
 ```
@@ -88,7 +98,10 @@ eco.quitar(message.guild.id, miembro.id, 1500)
 
 ```js
 ```
-#### Eco-comprar
+
+<a name="Eco-comprar" />
+
+#### Economia: Comprar
 
 ```js
 eco.comprar(clave, id, item)
@@ -102,6 +115,8 @@ eco.comprar(message.guild.id, miembro.id, 1)
 ```
 ```js
 ```
+<a name="tienda" />
+
 ### Tienda
 
 ```js
@@ -111,23 +126,28 @@ const td = new zeco.tienda()
 
 | Metodos | Descripcion |
 | ------ | ------ |
-| [mostrar](#TD-mostrar) | Agrega Items a la tienda|
-| [agregar](#TD-agregar) | Agrega Items a la tienda|
-| [quitar](#TD-quitar) | Quita Items de la tienda|
+| [Mostrar](#TD-mostrar) | Muestra Items a la tienda|
+| [Agregar](#TD-agregar) | Agrega Items a la tienda|
+| [Eliminar](#TD-quitar) | Elimina Items de la tienda|
 
+<a name="TD-mostrar" />
 
-#### TD-mostrar
+#### Tienda: Mostrar
+
 ```js
 eco.mostrar(clave)
 ```
 * clave - ID del servidor
 ```js
-const eco = new zeco.economia()
+const td = new zeco.tienda()
 eco.mostrar(message.guild.id)
 ```
 ```js
 ```
-#### TD-agregar
+<a name="TD-agregar" />
+
+#### Tienda: Agregar
+
 ```js
 eco.agregar(clave, nombre, desc, precio)
 ```
@@ -137,33 +157,31 @@ eco.agregar(clave, nombre, desc, precio)
 * precio - el precio del item
 ```js
 const td = new zeco.tienda()
-eco.agregar(message.guild.id, "Canal Propio", "Con esto podrás obtener un canal privado para ti", 20000)
+td.agregar(message.guild.id, "Canal Propio", "Con esto podrás obtener un canal privado para ti", 20000)
 ```
 ```js
 ```
-#### TD-quitar
+<a name="TD-quitar" />
+
+#### Tienda: Eliminar
+
 ```js
-eco.eliminar(clave, id)
+td.eliminar(clave, id)
 ```
 * clave -ID del servidor
 * id - Numero del Item de la tienda
 ```js
-const eco = new zeco.tienda()
-eco.quitar(message.guild.id, 1)
-```
-el numero del ítem aumento dependiendo cuantos tengas
-```json
-{
-  "nombre": {
-   "item1": "Articulo 1",
-   "item2": "Articulo 1",
-   "item3": "Articulo 1"
-}
+const td = new zeco.tienda()
+td.eliminar(message.guild.id, 1)
 ```
 ```js
 ```
 ### JSON
-#### json-eco
+
+<a name="json-eco" />
+
+#### json: Economia
+
 ```json
 {
  "ID-servidor": {
@@ -181,7 +199,10 @@ el numero del ítem aumento dependiendo cuantos tengas
 ```
 ```
 ```
-#### json-td
+<a name="json-td" />
+
+#### json: Tienda
+
 ```json
 {
  "ID-servidor": {
@@ -195,6 +216,9 @@ el numero del ítem aumento dependiendo cuantos tengas
 ```
 ---
 ## Zeew
+
+<a name="staff" />
+
 #### Staff
  * @KamerrOficial
   ```
@@ -209,6 +233,8 @@ el numero del ítem aumento dependiendo cuantos tengas
   * ROL: Co-Owner
   * ID Discord: 393603334847856650
 ```
+<a name="proyectos" />
+
 #### Proyectos
 
 | proyecto | descripcion |
