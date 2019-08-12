@@ -128,8 +128,10 @@ eco.comprar(message.guild.id, miembro.id, 1)
 _**Esta Te Devuelve:**_
 • **Si no hay tienda en el servidor:** 
 `"No hay Una Tienda en el servidor"`
+
 • **Si el dinero del usuario es menor al precio del item:**
 `"No Tienes el dinero suficiente"`
+
 • **Si El Item no existe**
 `"No Existe Ese Item En la tienda"`
 • **Mensaje de compra**
