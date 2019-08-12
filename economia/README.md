@@ -126,20 +126,31 @@ const eco = new zeco.economia()
 eco.comprar(message.guild.id, miembro.id, 1)
 ```
 _**Esta Te Devuelve:**_
+
 • **Si no hay tienda en el servidor:** 
+
 `"No hay Una Tienda en el servidor"`
 
 • **Si el dinero del usuario es menor al precio del item:**
+
 `"No Tienes el dinero suficiente"`
 
 • **Si El Item no existe**
+
 `"No Existe Ese Item En la tienda"`
+
 • **Mensaje de compra**
+
 `"Compra Realizada:`
+
 `Item: articulo1`
+
 `Descripcion: descripcion 1`
+
 `Precion: 1500"`
+
 > `Esto no es muy personalizable`
+
 
 > para que entiendas el mensaje que regresa, te muestro el db de la tienda, lo unico que revuelve la informacion del item comprado
 
