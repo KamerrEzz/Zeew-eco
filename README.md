@@ -16,7 +16,7 @@ Crea Una economía fácil y sencilla de usar para tu bot.
 * **Constructores**
   * [Economía](#economia)
   * [Tienda](#tienda)
-  * [Trabajos](#trabajos)
+  * [Dinero](#dinero)
 * **Estructura json**
   * [Economía](#json-eco)
   * [Tienda](#json-td)
@@ -167,16 +167,44 @@ td.agregar(servidor.id, "Canal Propio", "Con esto podrás obtener un canal priva
 #### Tienda: Eliminar
 
 ```js
-td.eliminar(clave, id)
+td.eliminar(clave, item)
 ```
 * clave -ID del servidor
-* id - Numero del Item de la tienda
+* item - Numero del Item de la tienda
 ```js
 const td = new zeco.tienda()
 td.eliminar(servidor.id, 1)
 ```
 ```js
 ```
+<a name="dinero" />
+
+### Dinero
+
+```js
+const zeco = require('zeew-eco')
+const td = new zeco.dinero()
+```
+| Metodos | Descripcion |
+| ------ | ------ |
+| [Robar](#D-robar) | Muestra Items a la tienda|
+
+
+<a name="D-robar" />
+
+#### Dinero: robar
+
+```js
+td.robar(clave, id1, d2, cantidad)
+```
+* clave -ID del servidor
+* id1 - ID del usuario (robar)
+* id2 - ID del usuario (robado)
+
+```js
+td.robar(servidor.id, yo.id, usuario.id, 1500)
+```
+
 ### JSON
 
 <a name="json-eco" />
