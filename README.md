@@ -187,7 +187,7 @@ const td = new zeco.dinero()
 ```
 | Metodos | Descripcion |
 | ------ | ------ |
-| [Robar](#D-robar) | Muestra Items a la tienda|
+| [Robar](#D-robar) | Roba dinero a otro usuario|
 
 
 <a name="D-robar" />
