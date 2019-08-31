@@ -17,6 +17,7 @@ Crea Una economía fácil y sencilla de usar para tu bot.
   * [Economía](#economia)
   * [Tienda](#tienda)
   * [Dinero](#dinero)
+  * [Inventario](#Inventario)
 * **Estructura json**
   * [Economía](#json-eco)
   * [Tienda](#json-td)
@@ -181,6 +182,7 @@ td.eliminar(servidor.id, 1)
 
 ### Dinero
 
+> esta funcion puede ser removida o cambiada en un futuro. Lo que diga la comunidad.
 ```js
 const zeco = require('zeew-eco')
 const td = new zeco.dinero()
@@ -206,12 +208,78 @@ td.robar(clave, id1, d2, cantidad)
 td.robar(servidor.id, yo.id, usuario.id, 1500)
 ```
 
+<a name="Inventario" />
+
+### Inventario
+```js
+const zeco = require('zeew-eco')
+const inv = new zeco.inventario()
+```
+| Metodos | Descripcion |
+| ------ | ------ |
+| [compras](#V-compras) | Guardar Compras en el inventario|
+| [quitarcompras](#V-quitarcompras) | Quitar Alguna compra en el inventario |
+| [vercompras](#v-vercompras) | Ver los objetos comprados desde la tienda
+
+<a name="V-compras" />
+
+#### Inventario: compras
+
+```js
+inv.compras(clave, id, item, boleano)
+```
+* clave - ID del servidor
+* ID - ID del usuario
+* Item - ID del item de la tienda que sera guardado en el inventario
+* boleano
+    * true - No guardar el mismo Item
+    * false - Guardar el mismo Item
+> proximas Actualizaciones se quiere hacer que los usuarios puedan vender los items de sus inventarios y tener una economia mas amplia.
+```js
+const inv = new zeco.inventario()
+inv.quitarcompras(servidor.id, usuario.id, 2 , false)
+```
+```js
+```
+
+<a name="V-quitarcompras" />
+
+#### Inventario: quitarcompras
+
+```js
+inv.quitarcompras(clave, id, item)
+```
+* clave - ID del servidor
+* ID - ID del usuario
+* Item - ID del item de la tienda que sera eliminado en el inventario
+```js
+const inv = new zeco.inventario()
+inv.quitarcompras(servidor.id, usuario.id, 2)
+```
+```js
+```
+
+<a name="V-vercompras" />
+
+#### Inventario: vercompras
+
+```js
+inv.vercompras(clave, id)
+```
+* clave - ID del servidor
+* ID - ID del usuario
+```js
+let inv = new ze.inventario()
+inv.vercompras(servidor.id,usuario.id)
+```
+```js
+```
+
 ### JSON
 
 <a name="json-eco" />
 
 #### json: Economia
-
 ```json
 {
  "ID-servidor": {
