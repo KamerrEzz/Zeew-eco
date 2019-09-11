@@ -113,11 +113,11 @@ eco.quitar(message.guild.id, miembro.id, 1500)
  y le quitas 500, esta regresara el dinero actual del usuario `1000`
  ```js
 let dinero = 1500
-let agregar = new zeco.agregar(servidor.id, usuario.id)
-if(agregar == "No tienes dinero") {
+let quitar = new zeco.quitar(servidor.id, usuario.id)
+if(quitar == "No tienes dinero") {
 message.channel.send("Eres muy pobre no te puedo quitar dinero que no tienes")
 }
-if(agregar == "Tu dinero es 0, no puedes quitarle mas."){
+if(quitar == "Tu dinero es 0, no puedes quitarle mas."){
     message.channel.send("Ya Te quitaron todo el dinero que tenias")
 }
 message.channel.send("Se te quito "+ dinero + ", Ahora tienes: " + agregar)
